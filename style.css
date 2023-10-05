@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the font family for the entire page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Flex utility class for centering content */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Styling for the overall page */
+.page {
+    padding: 0 25px;
+    min-height: 100vh;
+    background: #f0f2f5;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Styling for the left side (Facebook branding) */
+.fb {
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+.fb h1 {
+    color: #1877f2;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.fb p {
+    font-size: 1.5rem;
+}
+
+/* Styling for the right side (login form) */
+.form-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+form {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+    font-size: 25px;
+}
+
+/* Styling for input fields */
+::placeholder {
+    font-size: 1rem;
+}
+
+form input {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    padding: 0 14px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #1877f2;
+}
+
+/* Styling for the login button and hyperlink */
+.hyperlink {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hyperlink .login {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #1877f2;
+    padding: 15px 0;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+    width: 20rem;
+}
+
+.hyperlink .login:hover {
+    background: #166fe5;
+    text-decoration: none;
+}
+
+/* Styling for the horizontal line and create new account button */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #f0f0f0;
+    margin: 20px 0;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button a {
+    padding: 10px 20px;
+    background: #42b72a;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 550;
+    transition: 0.2s ease;
+    text-decoration-line: none;
+}
+
+.button a:hover {
+    background: #3ba626;
+}
+
+/* Additional styling for the "Create a Page" text */
+.form-container p {
+    font-size: 0.8rem;
+    white-space: nowrap; /* Keep text on one line */
+}
